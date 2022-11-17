@@ -1,0 +1,157 @@
+
+
+.PHONY : TARGET0
+TARGET0 :
+	@cd /home/moon/moon_verif/riscof_work/src/add-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/add-01.S -o sail-add-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-add-01.elf > sail-add-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/add-01.S/ref/Reference-sail_c_simulator.signature sail-add-01.elf > sail-add-01.log 2>&1;
+
+.PHONY : TARGET1
+TARGET1 :
+	@cd /home/moon/moon_verif/riscof_work/src/addi-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/addi-01.S -o sail-addi-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-addi-01.elf > sail-addi-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/addi-01.S/ref/Reference-sail_c_simulator.signature sail-addi-01.elf > sail-addi-01.log 2>&1;
+
+.PHONY : TARGET2
+TARGET2 :
+	@cd /home/moon/moon_verif/riscof_work/src/and-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/and-01.S -o sail-and-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-and-01.elf > sail-and-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/and-01.S/ref/Reference-sail_c_simulator.signature sail-and-01.elf > sail-and-01.log 2>&1;
+
+.PHONY : TARGET3
+TARGET3 :
+	@cd /home/moon/moon_verif/riscof_work/src/andi-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/andi-01.S -o sail-andi-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-andi-01.elf > sail-andi-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/andi-01.S/ref/Reference-sail_c_simulator.signature sail-andi-01.elf > sail-andi-01.log 2>&1;
+
+.PHONY : TARGET4
+TARGET4 :
+	@cd /home/moon/moon_verif/riscof_work/src/auipc-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/auipc-01.S -o sail-auipc-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-auipc-01.elf > sail-auipc-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/auipc-01.S/ref/Reference-sail_c_simulator.signature sail-auipc-01.elf > sail-auipc-01.log 2>&1;
+
+.PHONY : TARGET5
+TARGET5 :
+	@cd /home/moon/moon_verif/riscof_work/src/beq-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/beq-01.S -o sail-beq-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-beq-01.elf > sail-beq-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/beq-01.S/ref/Reference-sail_c_simulator.signature sail-beq-01.elf > sail-beq-01.log 2>&1;
+
+.PHONY : TARGET6
+TARGET6 :
+	@cd /home/moon/moon_verif/riscof_work/src/bge-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/bge-01.S -o sail-bge-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-bge-01.elf > sail-bge-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/bge-01.S/ref/Reference-sail_c_simulator.signature sail-bge-01.elf > sail-bge-01.log 2>&1;
+
+.PHONY : TARGET7
+TARGET7 :
+	@cd /home/moon/moon_verif/riscof_work/src/bgeu-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/bgeu-01.S -o sail-bgeu-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-bgeu-01.elf > sail-bgeu-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/bgeu-01.S/ref/Reference-sail_c_simulator.signature sail-bgeu-01.elf > sail-bgeu-01.log 2>&1;
+
+.PHONY : TARGET8
+TARGET8 :
+	@cd /home/moon/moon_verif/riscof_work/src/blt-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/blt-01.S -o sail-blt-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-blt-01.elf > sail-blt-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/blt-01.S/ref/Reference-sail_c_simulator.signature sail-blt-01.elf > sail-blt-01.log 2>&1;
+
+.PHONY : TARGET9
+TARGET9 :
+	@cd /home/moon/moon_verif/riscof_work/src/bltu-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/bltu-01.S -o sail-bltu-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-bltu-01.elf > sail-bltu-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/bltu-01.S/ref/Reference-sail_c_simulator.signature sail-bltu-01.elf > sail-bltu-01.log 2>&1;
+
+.PHONY : TARGET10
+TARGET10 :
+	@cd /home/moon/moon_verif/riscof_work/src/bne-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/bne-01.S -o sail-bne-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-bne-01.elf > sail-bne-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/bne-01.S/ref/Reference-sail_c_simulator.signature sail-bne-01.elf > sail-bne-01.log 2>&1;
+
+.PHONY : TARGET11
+TARGET11 :
+	@cd /home/moon/moon_verif/riscof_work/src/fence-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/fence-01.S -o sail-fence-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-fence-01.elf > sail-fence-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/fence-01.S/ref/Reference-sail_c_simulator.signature sail-fence-01.elf > sail-fence-01.log 2>&1;
+
+.PHONY : TARGET12
+TARGET12 :
+	@cd /home/moon/moon_verif/riscof_work/src/jal-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/jal-01.S -o sail-jal-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-jal-01.elf > sail-jal-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/jal-01.S/ref/Reference-sail_c_simulator.signature sail-jal-01.elf > sail-jal-01.log 2>&1;
+
+.PHONY : TARGET13
+TARGET13 :
+	@cd /home/moon/moon_verif/riscof_work/src/jalr-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/jalr-01.S -o sail-jalr-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-jalr-01.elf > sail-jalr-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/jalr-01.S/ref/Reference-sail_c_simulator.signature sail-jalr-01.elf > sail-jalr-01.log 2>&1;
+
+.PHONY : TARGET14
+TARGET14 :
+	@cd /home/moon/moon_verif/riscof_work/src/lb-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lb-align-01.S -o sail-lb-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-lb-align-01.elf > sail-lb-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/lb-align-01.S/ref/Reference-sail_c_simulator.signature sail-lb-align-01.elf > sail-lb-align-01.log 2>&1;
+
+.PHONY : TARGET15
+TARGET15 :
+	@cd /home/moon/moon_verif/riscof_work/src/lbu-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lbu-align-01.S -o sail-lbu-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-lbu-align-01.elf > sail-lbu-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/lbu-align-01.S/ref/Reference-sail_c_simulator.signature sail-lbu-align-01.elf > sail-lbu-align-01.log 2>&1;
+
+.PHONY : TARGET16
+TARGET16 :
+	@cd /home/moon/moon_verif/riscof_work/src/lh-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lh-align-01.S -o sail-lh-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-lh-align-01.elf > sail-lh-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/lh-align-01.S/ref/Reference-sail_c_simulator.signature sail-lh-align-01.elf > sail-lh-align-01.log 2>&1;
+
+.PHONY : TARGET17
+TARGET17 :
+	@cd /home/moon/moon_verif/riscof_work/src/lhu-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lhu-align-01.S -o sail-lhu-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-lhu-align-01.elf > sail-lhu-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/lhu-align-01.S/ref/Reference-sail_c_simulator.signature sail-lhu-align-01.elf > sail-lhu-align-01.log 2>&1;
+
+.PHONY : TARGET18
+TARGET18 :
+	@cd /home/moon/moon_verif/riscof_work/src/lui-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lui-01.S -o sail-lui-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-lui-01.elf > sail-lui-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/lui-01.S/ref/Reference-sail_c_simulator.signature sail-lui-01.elf > sail-lui-01.log 2>&1;
+
+.PHONY : TARGET19
+TARGET19 :
+	@cd /home/moon/moon_verif/riscof_work/src/lw-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lw-align-01.S -o sail-lw-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-lw-align-01.elf > sail-lw-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/lw-align-01.S/ref/Reference-sail_c_simulator.signature sail-lw-align-01.elf > sail-lw-align-01.log 2>&1;
+
+.PHONY : TARGET20
+TARGET20 :
+	@cd /home/moon/moon_verif/riscof_work/src/misalign1-jalr-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/misalign1-jalr-01.S -o sail-misalign1-jalr-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-misalign1-jalr-01.elf > sail-misalign1-jalr-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/misalign1-jalr-01.S/ref/Reference-sail_c_simulator.signature sail-misalign1-jalr-01.elf > sail-misalign1-jalr-01.log 2>&1;
+
+.PHONY : TARGET21
+TARGET21 :
+	@cd /home/moon/moon_verif/riscof_work/src/or-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/or-01.S -o sail-or-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-or-01.elf > sail-or-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/or-01.S/ref/Reference-sail_c_simulator.signature sail-or-01.elf > sail-or-01.log 2>&1;
+
+.PHONY : TARGET22
+TARGET22 :
+	@cd /home/moon/moon_verif/riscof_work/src/ori-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/ori-01.S -o sail-ori-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-ori-01.elf > sail-ori-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/ori-01.S/ref/Reference-sail_c_simulator.signature sail-ori-01.elf > sail-ori-01.log 2>&1;
+
+.PHONY : TARGET23
+TARGET23 :
+	@cd /home/moon/moon_verif/riscof_work/src/sb-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sb-align-01.S -o sail-sb-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sb-align-01.elf > sail-sb-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sb-align-01.S/ref/Reference-sail_c_simulator.signature sail-sb-align-01.elf > sail-sb-align-01.log 2>&1;
+
+.PHONY : TARGET24
+TARGET24 :
+	@cd /home/moon/moon_verif/riscof_work/src/sh-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sh-align-01.S -o sail-sh-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sh-align-01.elf > sail-sh-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sh-align-01.S/ref/Reference-sail_c_simulator.signature sail-sh-align-01.elf > sail-sh-align-01.log 2>&1;
+
+.PHONY : TARGET25
+TARGET25 :
+	@cd /home/moon/moon_verif/riscof_work/src/sll-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sll-01.S -o sail-sll-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sll-01.elf > sail-sll-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sll-01.S/ref/Reference-sail_c_simulator.signature sail-sll-01.elf > sail-sll-01.log 2>&1;
+
+.PHONY : TARGET26
+TARGET26 :
+	@cd /home/moon/moon_verif/riscof_work/src/slli-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/slli-01.S -o sail-slli-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-slli-01.elf > sail-slli-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/slli-01.S/ref/Reference-sail_c_simulator.signature sail-slli-01.elf > sail-slli-01.log 2>&1;
+
+.PHONY : TARGET27
+TARGET27 :
+	@cd /home/moon/moon_verif/riscof_work/src/slt-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/slt-01.S -o sail-slt-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-slt-01.elf > sail-slt-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/slt-01.S/ref/Reference-sail_c_simulator.signature sail-slt-01.elf > sail-slt-01.log 2>&1;
+
+.PHONY : TARGET28
+TARGET28 :
+	@cd /home/moon/moon_verif/riscof_work/src/slti-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/slti-01.S -o sail-slti-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-slti-01.elf > sail-slti-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/slti-01.S/ref/Reference-sail_c_simulator.signature sail-slti-01.elf > sail-slti-01.log 2>&1;
+
+.PHONY : TARGET29
+TARGET29 :
+	@cd /home/moon/moon_verif/riscof_work/src/sltiu-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sltiu-01.S -o sail-sltiu-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sltiu-01.elf > sail-sltiu-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sltiu-01.S/ref/Reference-sail_c_simulator.signature sail-sltiu-01.elf > sail-sltiu-01.log 2>&1;
+
+.PHONY : TARGET30
+TARGET30 :
+	@cd /home/moon/moon_verif/riscof_work/src/sltu-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sltu-01.S -o sail-sltu-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sltu-01.elf > sail-sltu-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sltu-01.S/ref/Reference-sail_c_simulator.signature sail-sltu-01.elf > sail-sltu-01.log 2>&1;
+
+.PHONY : TARGET31
+TARGET31 :
+	@cd /home/moon/moon_verif/riscof_work/src/sra-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sra-01.S -o sail-sra-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sra-01.elf > sail-sra-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sra-01.S/ref/Reference-sail_c_simulator.signature sail-sra-01.elf > sail-sra-01.log 2>&1;
+
+.PHONY : TARGET32
+TARGET32 :
+	@cd /home/moon/moon_verif/riscof_work/src/srai-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/srai-01.S -o sail-srai-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-srai-01.elf > sail-srai-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/srai-01.S/ref/Reference-sail_c_simulator.signature sail-srai-01.elf > sail-srai-01.log 2>&1;
+
+.PHONY : TARGET33
+TARGET33 :
+	@cd /home/moon/moon_verif/riscof_work/src/srl-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/srl-01.S -o sail-srl-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-srl-01.elf > sail-srl-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/srl-01.S/ref/Reference-sail_c_simulator.signature sail-srl-01.elf > sail-srl-01.log 2>&1;
+
+.PHONY : TARGET34
+TARGET34 :
+	@cd /home/moon/moon_verif/riscof_work/src/srli-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/srli-01.S -o sail-srli-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-srli-01.elf > sail-srli-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/srli-01.S/ref/Reference-sail_c_simulator.signature sail-srli-01.elf > sail-srli-01.log 2>&1;
+
+.PHONY : TARGET35
+TARGET35 :
+	@cd /home/moon/moon_verif/riscof_work/src/sub-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sub-01.S -o sail-sub-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sub-01.elf > sail-sub-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sub-01.S/ref/Reference-sail_c_simulator.signature sail-sub-01.elf > sail-sub-01.log 2>&1;
+
+.PHONY : TARGET36
+TARGET36 :
+	@cd /home/moon/moon_verif/riscof_work/src/sw-align-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sw-align-01.S -o sail-sw-align-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-sw-align-01.elf > sail-sw-align-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/sw-align-01.S/ref/Reference-sail_c_simulator.signature sail-sw-align-01.elf > sail-sw-align-01.log 2>&1;
+
+.PHONY : TARGET37
+TARGET37 :
+	@cd /home/moon/moon_verif/riscof_work/src/xor-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/xor-01.S -o sail-xor-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-xor-01.elf > sail-xor-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/xor-01.S/ref/Reference-sail_c_simulator.signature sail-xor-01.elf > sail-xor-01.log 2>&1;
+
+.PHONY : TARGET38
+TARGET38 :
+	@cd /home/moon/moon_verif/riscof_work/src/xori-01.S/ref;riscv64-unknown-elf-gcc -march=rv32i          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles         -T /home/moon/moon_verif/sail_cSim/env/link.ld         -I /home/moon/moon_verif/sail_cSim/env/         -I /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/env -mabi=ilp32  /home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/xori-01.S -o sail-xori-01.elf -DTEST_CASE_1=True -DXLEN=32;riscv64-unknown-elf-objdump -D sail-xori-01.elf > sail-xori-01.disass;riscv_sim_RV32 --test-signature=/home/moon/moon_verif/riscof_work/src/xori-01.S/ref/Reference-sail_c_simulator.signature sail-xori-01.elf > sail-xori-01.log 2>&1;

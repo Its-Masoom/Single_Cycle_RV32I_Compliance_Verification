@@ -1,0 +1,433 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/moon/moon_verif
+vALU
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1668702628
+!i10b 1
+!s100 12j1YRAjV^>7H=^QYgPP`1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IPoNg:7KR`?VMFE<030L;;0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1668180037
+8./RTL/ALU.sv
+F./RTL/ALU.sv
+!i122 3
+L0 1 37
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1668702628.000000
+!s107 ./RTL/program_Counter.sv|./RTL/mux_selB.sv|./RTL/mux_selA.sv|./RTL/instruction fetch.sv|./RTL/controller.sv|./RTL/TopLevel_tb.sv|./RTL/TopLevel.sv|./RTL/Register_file.sv|./RTL/PCPlus4.sv|./RTL/MuxResult.sv|./RTL/MuxPC.sv|./RTL/LoadStore_Unit.sv|./RTL/Instruction_Memory.sv|./RTL/Immediate_Gen.sv|./RTL/Data_Memory.sv|./RTL/BranchCond.sv|./RTL/ALU.sv|
+Z8 !s90 ./RTL/ALU.sv|./RTL/BranchCond.sv|./RTL/Data_Memory.sv|./RTL/Immediate_Gen.sv|./RTL/Instruction_Memory.sv|./RTL/LoadStore_Unit.sv|./RTL/MuxPC.sv|./RTL/MuxResult.sv|./RTL/PCPlus4.sv|./RTL/Register_file.sv|./RTL/TopLevel.sv|./RTL/TopLevel_tb.sv|./RTL/controller.sv|./RTL/instruction fetch.sv|./RTL/mux_selA.sv|./RTL/mux_selB.sv|./RTL/program_Counter.sv|
+!i113 1
+Z9 tCvgOpt 0
+n@a@l@u
+vBranchCond
+R1
+R2
+!i10b 1
+!s100 F4D2f>aPKJjoD;8A9hV9j0
+R3
+IFz?82CSig0<:S2=Y1S5n31
+R4
+S1
+R0
+R5
+8./RTL/BranchCond.sv
+F./RTL/BranchCond.sv
+!i122 3
+L0 1 45
+R6
+r1
+!s85 0
+31
+R7
+Z10 !s107 ./RTL/program_Counter.sv|./RTL/mux_selB.sv|./RTL/mux_selA.sv|./RTL/instruction fetch.sv|./RTL/controller.sv|./RTL/TopLevel_tb.sv|./RTL/TopLevel.sv|./RTL/Register_file.sv|./RTL/PCPlus4.sv|./RTL/MuxResult.sv|./RTL/MuxPC.sv|./RTL/LoadStore_Unit.sv|./RTL/Instruction_Memory.sv|./RTL/Immediate_Gen.sv|./RTL/Data_Memory.sv|./RTL/BranchCond.sv|./RTL/ALU.sv|
+R8
+!i113 1
+R9
+n@branch@cond
+vcontroller
+R1
+R2
+!i10b 1
+!s100 bka6PBYP@ii2`l>XS8zhl3
+R3
+I1LHMaKRja3Z7[]=TmKzgn2
+R4
+S1
+R0
+w1668180347
+8./RTL/controller.sv
+F./RTL/controller.sv
+!i122 3
+L0 1 169
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vData_Memory
+R1
+R2
+!i10b 1
+!s100 KE0MeV`FEE:D<;3OL4`KI2
+R3
+IMeaH2Xc<eg^ZzJUKWF]dS3
+R4
+S1
+R0
+w1668269614
+8./RTL/Data_Memory.sv
+F./RTL/Data_Memory.sv
+!i122 3
+L0 1 23
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@data_@memory
+vimmediate_gen
+R1
+R2
+!i10b 1
+!s100 bKE>LWN@12j?efTU4kMQL2
+R3
+IJ[FSl`W=FTA2R`05E:oaN0
+R4
+S1
+R0
+R5
+8./RTL/Immediate_Gen.sv
+F./RTL/Immediate_Gen.sv
+!i122 3
+L0 1 26
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vInstruction_Fetch
+R1
+R2
+!i10b 1
+!s100 W>]`iVGlh6C0Q]m0z7z1:2
+R3
+IOH@cH[fa4n=dJ]60?XXEV1
+R4
+S1
+R0
+R5
+8./RTL/instruction fetch.sv
+F./RTL/instruction fetch.sv
+!i122 3
+L0 1 11
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@instruction_@fetch
+vInstruction_Memory
+R1
+R2
+!i10b 1
+!s100 HBM;8_[^Ik:e`j?1h_kS^0
+R3
+I^NCL?1o<4G4]<>_M6>m5a1
+R4
+S1
+R0
+w1668352148
+8./RTL/Instruction_Memory.sv
+F./RTL/Instruction_Memory.sv
+!i122 3
+L0 1 20
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@instruction_@memory
+vLoadStore_Unit
+R1
+R2
+!i10b 1
+!s100 PUP@0H;:dE[3B@j`;dHSI0
+R3
+I63G[75h0e:9Hb06:7SP@b2
+R4
+S1
+R0
+w1668245391
+8./RTL/LoadStore_Unit.sv
+F./RTL/LoadStore_Unit.sv
+!i122 3
+L0 1 121
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@load@store_@unit
+vMux_PC
+R1
+R2
+!i10b 1
+!s100 S^HM5kO4a31[0baDzl[Og3
+R3
+I<aP`OVo^MGM5_CX^Mb;L<0
+R4
+S1
+R0
+R5
+8./RTL/MuxPC.sv
+F./RTL/MuxPC.sv
+!i122 3
+Z11 L0 1 14
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@mux_@p@c
+vmux_selA
+R1
+R2
+!i10b 1
+!s100 S^k:IjLU?_N^URO0>elVG3
+R3
+Id`X?5If@=<l1i^RGz^8A13
+R4
+S1
+R0
+R5
+8./RTL/mux_selA.sv
+F./RTL/mux_selA.sv
+!i122 3
+L0 1 12
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+nmux_sel@a
+vmux_selB
+R1
+R2
+!i10b 1
+!s100 U]AiX`Njc]fe8^a6^1[o12
+R3
+Iooh>h[k^c<[z6zbgT2?2k0
+R4
+S1
+R0
+R5
+8./RTL/mux_selB.sv
+F./RTL/mux_selB.sv
+!i122 3
+L0 1 15
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+nmux_sel@b
+vMuxResult
+R1
+R2
+!i10b 1
+!s100 d72<ViATQ[bZKVXTT6iJY1
+R3
+I<hiN7WfiTJ?TeZz8OAjm93
+R4
+S1
+R0
+R5
+8./RTL/MuxResult.sv
+F./RTL/MuxResult.sv
+!i122 3
+R11
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@mux@result
+vPCPlus4
+R1
+R2
+!i10b 1
+!s100 @A_FN]hbCY7>o@5SL[]aK1
+R3
+IzV3eg4H:z7?M3]o]3HWA:0
+R4
+S1
+R0
+R5
+8./RTL/PCPlus4.sv
+F./RTL/PCPlus4.sv
+!i122 3
+L0 1 8
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@p@c@plus4
+vprogram_counter
+R1
+R2
+!i10b 1
+!s100 R3:J;l9Eg2MSlCJ_EI2`b1
+R3
+I^1M3a2F@:P40gHDE`enWT0
+R4
+S1
+R0
+R5
+8./RTL/program_Counter.sv
+F./RTL/program_Counter.sv
+!i122 3
+L0 1 13
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+vRegister_file
+R1
+R2
+!i10b 1
+!s100 @nYOaC<fW2TQLR9<L@HAP3
+R3
+ILEQ=0ZE9RaXjScA=Az4o92
+R4
+S1
+R0
+R5
+8./RTL/Register_file.sv
+F./RTL/Register_file.sv
+!i122 3
+L0 1 27
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@register_file
+vTopLevel
+R1
+R2
+!i10b 1
+!s100 ZP`mE66[AQO3K`mMi:dl;3
+R3
+I1dfk_MHT^ii^_@`CC9_QK2
+R4
+S1
+R0
+R5
+8./RTL/TopLevel.sv
+F./RTL/TopLevel.sv
+!i122 3
+L0 1 28
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@top@level
+vTopLevel_tb
+R1
+R2
+!i10b 1
+!s100 M_UB1M]Kb1h>@6CilFQKA0
+R3
+IfVje2U3AdO4_m<<TA0E763
+R4
+S1
+R0
+w1668349404
+8./RTL/TopLevel_tb.sv
+F./RTL/TopLevel_tb.sv
+!i122 3
+L0 3 59
+R6
+r1
+!s85 0
+31
+R7
+R10
+R8
+!i113 1
+R9
+n@top@level_tb
