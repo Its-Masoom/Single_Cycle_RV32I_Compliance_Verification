@@ -3,7 +3,7 @@ module Instruction_Memory (
     output logic [31:0] Inst
 );
 logic [1023:0] kpl;
-logic [31:0] inst_memory [1100000:0]; 
+logic [31:0] inst_memory [2**13-1:0]; 
 
 // initial begin
 //     $readmemh("my.hex", inst_memory); 

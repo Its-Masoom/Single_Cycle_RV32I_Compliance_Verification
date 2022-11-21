@@ -12,14 +12,17 @@
 
 //RV_COMPLIANCE_HALT
 #define RVMODEL_HALT    
-    li a1,0xff000000;  \
-    la a2,begin_signature ; 	\
-    la a3,end_signature ;   \
-    loop:	;	\
-    lw t1,0(a2)	;\
-    sw t1,0(a1)	;\
-    addi a2,a2,4	;\
-    blt a2, a3, loop	;
+    li a1,0xF00 ; \
+    la a2,begin_signature ; \
+    la a3,end_signature ; \
+    loop: ; \
+      lw t1,0(a2) ; \
+      sw t1,0(a1) ; \
+      addi a2,a2,4 ; \
+      blt a2, a3, loop ; \
+    la a4,0xcafebeef ; \
+    sw t5,0(a4) ; 
+        
 #define RVMODEL_BOOT
 
 //RV_COMPLIANCE_DATA_BEGIN

@@ -29,9 +29,10 @@ always_ff @(posedge clk)
 
 begin
     
-if((~TOPLevel.Dmem.wr)&(TOPLevel.ALUResult == 32'hff000000))
+if((~TOPLevel.Dmem.wr)&(TOPLevel.ALUResult == 32'h00000F00))
+//if(~TOPLevel.Dmem.wr)
 begin
-    $fwrite(f,"%h\n", TOPLevel.Dmem.data_wr);
+    $fwrite(f,"%h\n", TOPLevel.data_wr);
 end
 
 if((~TOPLevel.Dmem.wr)&(TOPLevel.ALUResult == 32'hcafebeef))
