@@ -3,10 +3,13 @@ module Data_Memory(
     input  logic cs,wr,
     input  logic [3:0] mask,
     input  logic [31:0]  data_wr,
-    input logic [12:0] addr,
+    input logic [20:0] addr,
+    // input logic [13:0] addr,
+
     output logic [31:0] data_rd
 );
-    logic [31:0] data_mem [2**13-1:0]; 
+    logic [31:0] data_mem [2**27-1:0]; 
+    // logic [31:0] data_mem [2**14-1:0]; 
 
 //Asynchronous Data Memory Read for Load Operation
 assign data_rd =((~cs) & (wr)) ? data_mem[addr] : '0;

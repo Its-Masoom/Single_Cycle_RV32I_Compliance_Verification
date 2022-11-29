@@ -1,5 +1,5 @@
-# vsim -c -do "run -all" TopLevel_tb "+sig=check2" "+mem_init=my1.hex" 
-# Start time: 19:41:15 on Nov 21,2022
+# vsim -c -do "run -all" TopLevel_tb "+sig=check" "+mem_init=add.hex" 
+# Start time: 17:39:29 on Nov 29,2022
 # Loading sv_std.std
 # Loading work.TopLevel_tb
 # Loading work.TopLevel
@@ -18,11 +18,12 @@
 # Loading work.mux_selB
 # Loading work.MuxResult
 # Loading work.BranchCond
-# ** Warning: (vsim-3015) [PCDPC] - Port size (13) does not match connection size (32) for port 'addr'. The port definition is at: Data_Memory.sv(6).
+# Loading work.Memory_mux
+# ** Warning: (vsim-3015) [PCDPC] - Port size (21) does not match connection size (32) for port 'addr'. The port definition is at: Data_Memory.sv(6).
 #    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/TOPLevel/Dmem File: TopLevel.sv Line: 21
 # run -all
-# STRING with FS has a value check2
-# ** Note: $finish    : TopLevel_tb.sv(40)
-#    Time: 11189 ps  Iteration: 1  Instance: /TopLevel_tb
-# End time: 19:41:15 on Nov 21,2022, Elapsed time: 0:00:00
+# STRING with FS has a value check
+# ** Note: $finish    : TopLevel_tb.sv(42)
+#    Time: 15013 ps  Iteration: 1  Instance: /TopLevel_tb
+# End time: 17:39:32 on Nov 29,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 1

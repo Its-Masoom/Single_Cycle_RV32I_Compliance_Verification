@@ -30,7 +30,9 @@ always_ff @(posedge clk)
 begin
     
 if((~TOPLevel.Dmem.wr)&(TOPLevel.ALUResult == 32'h00000F00))
-//if(~TOPLevel.Dmem.wr)
+// if((~TOPLevel.Dmem.wr)&(TOPLevel.ALUResult == 32'hF0000000))
+
+// if(~TOPLevel.Dmem.wr)
 begin
     $fwrite(f,"%h\n", TOPLevel.data_wr);
 end
@@ -59,5 +61,7 @@ initial begin
     end
     $finish;
 end
+
+
 endmodule
 
