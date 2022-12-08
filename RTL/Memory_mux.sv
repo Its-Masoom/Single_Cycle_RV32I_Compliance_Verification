@@ -10,7 +10,7 @@ always_comb begin
     //    1'b1 : mem_out=  toLSU; // Instruction Memory
     // endcase
 
-    if ((addr[12] | addr[13] | addr[14] | addr[15]) & toLSU != 32'hdeadbeef)
+    if ((addr [8] | addr[9] | addr[10] | addr[11] | addr[12] | addr[13] | addr[14] | addr[15] | addr[16]) & toLSU != 32'hdeadbeef & toLSU != 32'hbabecafe)
     // if ((addr[12] | addr[13] | addr[14] | addr[15] ))
     // if ((addr[12] | addr[13] | addr[14] | addr[15] ))
         mem_out=  toLSU; // Instruction Memory

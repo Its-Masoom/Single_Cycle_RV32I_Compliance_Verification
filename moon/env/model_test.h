@@ -11,7 +11,7 @@
         .word 4;
 
 //RV_COMPLIANCE_HALT
-#define RVMODEL_HALT    
+#define RVMODEL_HALT    ;\
     li a1,0xF00 ; \
     la a2,begin_signature ; \
     la a3,end_signature ; \

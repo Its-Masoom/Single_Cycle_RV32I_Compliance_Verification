@@ -1,5 +1,5 @@
-# vsim -c -do "run -all" TopLevel_tb "+sig=check" "+mem_init=add.hex" 
-# Start time: 17:39:29 on Nov 29,2022
+# vsim -c -do "run -all" TopLevel_tb "+sig=check" "+mem_init=fence.hex" 
+# Start time: 00:09:50 on Dec 09,2022
 # Loading sv_std.std
 # Loading work.TopLevel_tb
 # Loading work.TopLevel
@@ -24,6 +24,6 @@
 # run -all
 # STRING with FS has a value check
 # ** Note: $finish    : TopLevel_tb.sv(42)
-#    Time: 15013 ps  Iteration: 1  Instance: /TopLevel_tb
-# End time: 17:39:32 on Nov 29,2022, Elapsed time: 0:00:03
+#    Time: 213 ps  Iteration: 1  Instance: /TopLevel_tb
+# End time: 00:09:52 on Dec 09,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
