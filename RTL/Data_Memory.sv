@@ -8,7 +8,7 @@ module Data_Memory(
 
     output logic [31:0] data_rd
 );
-    logic [31:0] data_mem [2**27-1:0]; 
+    logic [31:0] data_mem [2**21-1:0]; 
     // logic [31:0] data_mem [2**14-1:0]; 
 
 //Asynchronous Data Memory Read for Load Operation
@@ -16,7 +16,9 @@ assign data_rd =((~cs) & (wr)) ? data_mem[addr] : '0;
 
 //Synchronous write 
 always_ff @ ( negedge clk ) begin 
-    if (cs==0 && wr==0) begin
+    if (rst) begin
+        data_mem <= '{default: 32'hdeadbeef};
+    end else if (cs==0 && wr==0) begin
         if ( mask[0] )  data_mem [addr][7:0]   = data_wr [7:0];
         if ( mask[1] )  data_mem [addr][15:8]  = data_wr [15:8];
         if ( mask[2] )  data_mem [addr][23:16] = data_wr [23:16];    
