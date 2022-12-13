@@ -265,7 +265,7 @@ function filter_table(elem) {
 
 </script>
     <h1></h1>
-    <p>Report generated on 2022-12-10 10:42 GMT by <a href="https://pypi.python.org/pypi/riscof">riscof</a> v</p>
+    <p>Report generated on 2022-12-13 17:42 GMT by <a href="https://pypi.python.org/pypi/riscof">riscof</a> v</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -4369,7 +4369,7 @@ zicbo_cache_block_sz:
     <p>Please visit <a href="https://riscv-config.readthedocs.io/en/latest/yaml-specs.html">YAML specifications</a> for more information. </p>
 
     <h2>Summary</h2>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">29Passed</span>, <input checked="true" class="filter" data-test-result="failed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">10Failed</span>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">30Passed</span>, <input checked="true" class="filter" data-test-result="failed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">9Failed</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -4536,21 +4536,17 @@ TEST_CASE_1=True
 XLEN=32</br></div></td>
         </tr></tbody>
         
-        <tbody class= "failed  results-table-row" >
+        <tbody class= "passed  results-table-row" >
         <tr>
           <td class="col-name">/home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/jal-01.S</td>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td class="col-path">/home/moon/moon_verif/riscof_work/src/jal-01.S</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">commit_id:-
 MACROS:
 TEST_CASE_1=True
-XLEN=32
-File1 Path:/home/moon/moon_verif/riscof_work/src/jal-01.S/dut/DUT-moon.signature
-File2 Path:/home/moon/moon_verif/riscof_work/src/jal-01.S/ref/Reference-sail_c_simulator.signature
-Match  Line#    File1    File2
-</br></div></td>
+XLEN=32</br></div></td>
         </tr></tbody>
         
         <tbody class= "failed  results-table-row" >
@@ -4567,40 +4563,6 @@ XLEN=32
 File1 Path:/home/moon/moon_verif/riscof_work/src/jalr-01.S/dut/DUT-moon.signature
 File2 Path:/home/moon/moon_verif/riscof_work/src/jalr-01.S/ref/Reference-sail_c_simulator.signature
 Match  Line#    File1    File2
-*          1 00000016 00000017
-*          2 00000016 00000017
-*          3 00000016 00000017
-*          4 00000016 00000017
-*          5 00000016 00000017
-*          6 00000016 00000017
-*          7 00000016 00000017
-           8 00000000 00000000
-*          9 00000016 00000017
-*         10 00000016 00000017
-*         11 00000016 00000017
-*         12 00000016 00000017
-*         13 00000016 00000017
-*         14 00000016 00000017
-*         15 00000016 00000017
-*         16 00000016 00000017
-*         17 00000016 00000017
-*         18 00000016 00000017
-*         19 00000016 00000017
-*         20 00000016 00000017
-*         21 00000016 00000017
-*         22 00000016 00000017
-*         23 00000016 00000017
-*         24 00000016 00000017
-*         25 00000016 00000017
-*         26 00000016 00000017
-*         27 00000016 00000017
-*         28 00000016 00000017
-*         29 00000016 00000017
-*         30 00000016 00000017
-*         31 00000016 00000017
-*         32 00000016 00000017
-*         33 00000016 00000017
-          34 6f5ca309 6f5ca309
 </br></div></td>
         </tr></tbody>
         
@@ -4880,7 +4842,7 @@ XLEN=32
 File1 Path:/home/moon/moon_verif/riscof_work/src/misalign1-jalr-01.S/dut/DUT-moon.signature
 File2 Path:/home/moon/moon_verif/riscof_work/src/misalign1-jalr-01.S/ref/Reference-sail_c_simulator.signature
 Match  Line#    File1    File2
-*          1 00000016 00000017
+*          1 deadbeef 00000017
            2 6f5ca309 6f5ca309
 </br></div></td>
         </tr></tbody>
