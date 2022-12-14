@@ -16,7 +16,7 @@ assign data_rd =((~cs) & (wr)) ? data_mem[addr] : '0;
 //Synchronous write 
 always_ff @ ( negedge clk ) begin 
     if (rst) begin
-        data_mem <= '{default: 32'hdeadbeef};
+        data_mem <= '{default: 32'hbabecafe};
     end else if (cs==0 && wr==0) begin
         if ( mask[0] )  data_mem [addr][7:0]   = data_wr [7:0];
         if ( mask[1] )  data_mem [addr][15:8]  = data_wr [15:8];
