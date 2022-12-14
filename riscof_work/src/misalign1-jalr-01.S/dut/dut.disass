@@ -77,7 +77,7 @@ Disassembly of section .text.init:
 80000104:	00058593          	mv	a1,a1
 80000108:	00000517          	auipc	a0,0x0
 8000010c:	03d50513          	addi	a0,a0,61 # 80000145 <rvtest_code_end+0x5>
-80000110:	fe0505e7          	jalr	a1,-32(a0)
+80000110:	fdf505e7          	jalr	a1,-33(a0)
 80000114:	00000013          	nop
 80000118:	00000013          	nop
 8000011c:	0025c593          	xori	a1,a1,2

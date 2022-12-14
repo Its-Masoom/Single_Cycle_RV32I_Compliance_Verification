@@ -34,7 +34,7 @@ RVTEST_SIGBASE( x1,signature_x1_1)
 inst_0:
 // ea_align == 1, 
 // opcode: jalr; op1:x10; dest:x11; immval:-0x21; align:1 
-TEST_JALR_OP(x2, x11, x10, -0x21, x1, 0,1)
+TEST_JALR_OP(x2, x11, x10, -0x21, x1, 0,0)
 #endif
 
 
