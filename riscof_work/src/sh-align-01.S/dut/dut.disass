@@ -130,7 +130,7 @@ Disassembly of section .text.init:
 
 800001b0 <inst_6>:
 800001b0:	ff700493          	li	s1,-9
-800001b4:	01a20c13          	addi	s8,tp,26 # 1a <offset+0x1a>
+800001b4:	01820c13          	addi	s8,tp,24 # 18 <offset+0x18>
 800001b8:	00800813          	li	a6,8
 800001bc:	410c0c33          	sub	s8,s8,a6
 800001c0:	009c1423          	sh	s1,8(s8)
@@ -139,7 +139,7 @@ Disassembly of section .text.init:
 
 800001cc <inst_7>:
 800001cc:	40000c93          	li	s9,1024
-800001d0:	01e20193          	addi	gp,tp,30 # 1e <offset+0x1e>
+800001d0:	01c20193          	addi	gp,tp,28 # 1c <offset+0x1c>
 800001d4:	ffd00813          	li	a6,-3
 800001d8:	410181b3          	sub	gp,gp,a6
 800001dc:	ff919ea3          	sh	s9,-3(gp)
@@ -149,7 +149,7 @@ Disassembly of section .text.init:
 800001e8 <inst_8>:
 800001e8:	fffc0f37          	lui	t5,0xfffc0
 800001ec:	ffff0f13          	addi	t5,t5,-1 # fffbffff <_end+0x7ffbdcbf>
-800001f0:	02220593          	addi	a1,tp,34 # 22 <offset+0x22>
+800001f0:	02020593          	addi	a1,tp,32 # 20 <offset+0x20>
 800001f4:	00200813          	li	a6,2
 800001f8:	410585b3          	sub	a1,a1,a6
 800001fc:	01e59123          	sh	t5,2(a1)
@@ -158,7 +158,7 @@ Disassembly of section .text.init:
 
 80000208 <inst_9>:
 80000208:	20000693          	li	a3,512
-8000020c:	02620d13          	addi	s10,tp,38 # 26 <offset+0x26>
+8000020c:	02420d13          	addi	s10,tp,36 # 24 <offset+0x24>
 80000210:	ff700813          	li	a6,-9
 80000214:	410d0d33          	sub	s10,s10,a6
 80000218:	fedd1ba3          	sh	a3,-9(s10) # 7ffffff7 <_end+0xffffdcb7>

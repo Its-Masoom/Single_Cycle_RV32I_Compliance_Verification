@@ -1,5 +1,5 @@
-# vsim TopLevel_tb "+sig=check" "+mem_init=mjalr.hex" 
-# Start time: 22:29:25 on Dec 13,2022
+# vsim TopLevel_tb "+sig=check" "+mem_init=lhua.hex" 
+# Start time: 14:46:58 on Dec 14,2022
 # Loading sv_std.std
 # Loading work.TopLevel_tb
 # Loading work.TopLevel
@@ -25,8 +25,18 @@ add wave -position insertpoint sim:/TopLevel_tb/TOPLevel/*
 run -all
 # STRING with FS has a value check
 # ** Note: $finish    : TopLevel_tb.sv(42)
-#    Time: 221 ps  Iteration: 1  Instance: /TopLevel_tb
+#    Time: 845 ps  Iteration: 1  Instance: /TopLevel_tb
 # 1
 # Break in Module TopLevel_tb at TopLevel_tb.sv line 42
-# End time: 22:36:53 on Dec 13,2022, Elapsed time: 0:07:28
-# Errors: 0, Warnings: 1
+add wave -position insertpoint sim:/TopLevel_tb/TOPLevel/loadstore/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (21) does not match connection size (32) for port 'addr'. The port definition is at: Data_Memory.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/TOPLevel/Dmem File: TopLevel.sv Line: 21
+run -all
+# STRING with FS has a value check
+# ** Note: $finish    : TopLevel_tb.sv(42)
+#    Time: 845 ps  Iteration: 1  Instance: /TopLevel_tb
+# 1
+# Break in Module TopLevel_tb at TopLevel_tb.sv line 42
+# WARNING: No extended dataflow license exists

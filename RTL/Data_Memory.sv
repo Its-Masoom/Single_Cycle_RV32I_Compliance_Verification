@@ -13,7 +13,6 @@ module Data_Memory(
 
 //Asynchronous Data Memory Read for Load Operation
 assign data_rd =((~cs) & (wr)) ? data_mem[addr] : '0;
-
 //Synchronous write 
 always_ff @ ( negedge clk ) begin 
     if (rst) begin

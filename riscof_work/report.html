@@ -265,7 +265,7 @@ function filter_table(elem) {
 
 </script>
     <h1></h1>
-    <p>Report generated on 2022-12-13 17:42 GMT by <a href="https://pypi.python.org/pypi/riscof">riscof</a> v</p>
+    <p>Report generated on 2022-12-14 10:32 GMT by <a href="https://pypi.python.org/pypi/riscof">riscof</a> v</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -4369,7 +4369,7 @@ zicbo_cache_block_sz:
     <p>Please visit <a href="https://riscv-config.readthedocs.io/en/latest/yaml-specs.html">YAML specifications</a> for more information. </p>
 
     <h2>Summary</h2>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">30Passed</span>, <input checked="true" class="filter" data-test-result="failed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">9Failed</span>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">32Passed</span>, <input checked="true" class="filter" data-test-result="failed" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">7Failed</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -4523,17 +4523,23 @@ TEST_CASE_1=True
 XLEN=32</br></div></td>
         </tr></tbody>
         
-        <tbody class= "passed  results-table-row" >
+        <tbody class= "failed  results-table-row" >
         <tr>
           <td class="col-name">/home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/fence-01.S</td>
-          <td class="col-result">Passed</td>
+          <td class="col-result">Failed</td>
           <td class="col-path">/home/moon/moon_verif/riscof_work/src/fence-01.S</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">commit_id:-
 MACROS:
 TEST_CASE_1=True
-XLEN=32</br></div></td>
+XLEN=32
+File1 Path:/home/moon/moon_verif/riscof_work/src/fence-01.S/dut/DUT-moon.signature
+File2 Path:/home/moon/moon_verif/riscof_work/src/fence-01.S/ref/Reference-sail_c_simulator.signature
+Match  Line#    File1    File2
+*          1 babecafe ffffffff
+           2 6f5ca309 6f5ca309
+</br></div></td>
         </tr></tbody>
         
         <tbody class= "passed  results-table-row" >
@@ -4580,39 +4586,39 @@ XLEN=32
 File1 Path:/home/moon/moon_verif/riscof_work/src/lb-align-01.S/dut/DUT-moon.signature
 File2 Path:/home/moon/moon_verif/riscof_work/src/lb-align-01.S/ref/Reference-sail_c_simulator.signature
 Match  Line#    File1    File2
-*          1 ffffffef fffffffe
-*          2 ffffffef fffffffe
-*          3 ffffffef fffffffe
-*          4 ffffffef fffffffe
-*          5 ffffffad ffffffbe
-*          6 ffffffad ffffffbe
-*          7 ffffffad ffffffbe
-*          8 ffffffad ffffffbe
+*          1 babecafe fffffffe
+*          2 babecafe fffffffe
+*          3 babecafe fffffffe
+*          4 babecafe fffffffe
+*          5 babecafe ffffffbe
+*          6 babecafe ffffffbe
+*          7 babecafe ffffffbe
+*          8 babecafe ffffffbe
            9 00000000 00000000
-*         10 ffffffbe ffffffca
-*         11 ffffffef fffffffe
-*         12 ffffffbe ffffffca
-*         13 ffffffbe ffffffca
-*         14 ffffffde ffffffba
-*         15 ffffffde ffffffba
-*         16 ffffffde ffffffba
-*         17 ffffffde ffffffba
-*         18 ffffffef fffffffe
-*         19 ffffffef fffffffe
-*         20 ffffffef fffffffe
-*         21 ffffffef fffffffe
-*         22 ffffffef fffffffe
-*         23 ffffffef fffffffe
-*         24 ffffffef fffffffe
-*         25 ffffffef fffffffe
-*         26 ffffffef fffffffe
-*         27 ffffffef fffffffe
-*         28 ffffffef fffffffe
-*         29 ffffffef fffffffe
-*         30 ffffffef fffffffe
-*         31 ffffffef fffffffe
-*         32 ffffffef fffffffe
-*         33 ffffffbe ffffffca
+*         10 babecafe ffffffca
+*         11 babecafe fffffffe
+*         12 babecafe ffffffca
+*         13 babecafe ffffffca
+*         14 babecafe ffffffba
+*         15 babecafe ffffffba
+*         16 babecafe ffffffba
+*         17 babecafe ffffffba
+*         18 babecafe fffffffe
+*         19 babecafe fffffffe
+*         20 babecafe fffffffe
+*         21 babecafe fffffffe
+*         22 babecafe fffffffe
+*         23 babecafe fffffffe
+*         24 babecafe fffffffe
+*         25 babecafe fffffffe
+*         26 babecafe fffffffe
+*         27 babecafe fffffffe
+*         28 babecafe fffffffe
+*         29 babecafe fffffffe
+*         30 babecafe fffffffe
+*         31 babecafe fffffffe
+*         32 babecafe fffffffe
+*         33 babecafe ffffffca
           34 6f5ca309 6f5ca309
 </br></div></td>
         </tr></tbody>
@@ -4631,38 +4637,38 @@ XLEN=32
 File1 Path:/home/moon/moon_verif/riscof_work/src/lbu-align-01.S/dut/DUT-moon.signature
 File2 Path:/home/moon/moon_verif/riscof_work/src/lbu-align-01.S/ref/Reference-sail_c_simulator.signature
 Match  Line#    File1    File2
-*          1 00000000 000000fe
-*          2 00000000 000000fe
-*          3 00000000 000000fe
-*          4 00000000 000000fe
-*          5 00000000 000000be
-*          6 00000000 000000be
-*          7 00000000 000000be
-*          8 00000000 000000be
-*          9 00000000 000000ca
-*         10 00000000 000000ca
-*         11 00000000 000000fe
-*         12 00000000 000000ca
-*         13 00000000 000000ca
-*         14 00000000 000000ba
-*         15 00000000 000000ba
-*         16 00000000 000000ba
-*         17 00000000 000000ba
-*         18 00000000 000000fe
-*         19 00000000 000000fe
-*         20 00000000 000000fe
-*         21 00000000 000000fe
-*         22 00000000 000000fe
-*         23 00000000 000000fe
-*         24 00000000 000000fe
-*         25 00000000 000000fe
-*         26 00000000 000000fe
-*         27 00000000 000000fe
-*         28 00000000 000000fe
-*         29 00000000 000000fe
+*          1 babecafe 000000fe
+*          2 babecafe 000000fe
+*          3 babecafe 000000fe
+*          4 babecafe 000000fe
+*          5 babecafe 000000be
+*          6 babecafe 000000be
+*          7 babecafe 000000be
+*          8 babecafe 000000be
+*          9 babecafe 000000ca
+*         10 babecafe 000000ca
+*         11 babecafe 000000fe
+*         12 babecafe 000000ca
+*         13 babecafe 000000ca
+*         14 babecafe 000000ba
+*         15 babecafe 000000ba
+*         16 babecafe 000000ba
+*         17 babecafe 000000ba
+*         18 babecafe 000000fe
+*         19 babecafe 000000fe
+*         20 babecafe 000000fe
+*         21 babecafe 000000fe
+*         22 babecafe 000000fe
+*         23 babecafe 000000fe
+*         24 babecafe 000000fe
+*         25 babecafe 000000fe
+*         26 babecafe 000000fe
+*         27 babecafe 000000fe
+*         28 babecafe 000000fe
+*         29 babecafe 000000fe
           30 00000000 00000000
-*         31 00000000 000000fe
-*         32 00000000 000000fe
+*         31 babecafe 000000fe
+*         32 babecafe 000000fe
           33 6f5ca309 6f5ca309
 </br></div></td>
         </tr></tbody>
@@ -4681,37 +4687,37 @@ XLEN=32
 File1 Path:/home/moon/moon_verif/riscof_work/src/lh-align-01.S/dut/DUT-moon.signature
 File2 Path:/home/moon/moon_verif/riscof_work/src/lh-align-01.S/ref/Reference-sail_c_simulator.signature
 Match  Line#    File1    File2
-*          1 ffffbeef ffffcafe
-*          2 ffffbeef ffffcafe
-*          3 ffffbeef ffffcafe
-*          4 ffffbeef ffffcafe
-*          5 ffffdead ffffbabe
-*          6 ffffbeef ffffcafe
-*          7 ffffdead ffffbabe
-*          8 ffffdead ffffbabe
-*          9 ffffdead ffffbabe
-*         10 ffffbeef ffffcafe
-*         11 ffffbeef ffffcafe
-*         12 ffffbeef ffffcafe
-*         13 ffffbeef ffffcafe
-*         14 ffffbeef ffffcafe
-*         15 ffffbeef ffffcafe
-*         16 ffffbeef ffffcafe
-*         17 ffffbeef ffffcafe
-*         18 ffffbeef ffffcafe
-*         19 ffffbeef ffffcafe
-*         20 ffffbeef ffffcafe
-*         21 ffffbeef ffffcafe
-*         22 ffffbeef ffffcafe
-*         23 ffffbeef ffffcafe
-*         24 ffffbeef ffffcafe
-*         25 ffffbeef ffffcafe
-*         26 ffffbeef ffffcafe
-*         27 ffffbeef ffffcafe
-*         28 ffffbeef ffffcafe
-*         29 ffffbeef ffffcafe
-*         30 ffffbeef ffffcafe
-*         31 ffffbeef ffffcafe
+*          1 babecafe ffffcafe
+*          2 babecafe ffffcafe
+*          3 babecafe ffffcafe
+*          4 babecafe ffffcafe
+*          5 babecafe ffffbabe
+*          6 babecafe ffffcafe
+*          7 babecafe ffffbabe
+*          8 babecafe ffffbabe
+*          9 babecafe ffffbabe
+*         10 babecafe ffffcafe
+*         11 babecafe ffffcafe
+*         12 babecafe ffffcafe
+*         13 babecafe ffffcafe
+*         14 babecafe ffffcafe
+*         15 babecafe ffffcafe
+*         16 babecafe ffffcafe
+*         17 babecafe ffffcafe
+*         18 babecafe ffffcafe
+*         19 babecafe ffffcafe
+*         20 babecafe ffffcafe
+*         21 babecafe ffffcafe
+*         22 babecafe ffffcafe
+*         23 babecafe ffffcafe
+*         24 babecafe ffffcafe
+*         25 babecafe ffffcafe
+*         26 babecafe ffffcafe
+*         27 babecafe ffffcafe
+*         28 babecafe ffffcafe
+*         29 babecafe ffffcafe
+*         30 babecafe ffffcafe
+*         31 babecafe ffffcafe
           32 00000000 00000000
 </br></div></td>
         </tr></tbody>
@@ -4730,37 +4736,37 @@ XLEN=32
 File1 Path:/home/moon/moon_verif/riscof_work/src/lhu-align-01.S/dut/DUT-moon.signature
 File2 Path:/home/moon/moon_verif/riscof_work/src/lhu-align-01.S/ref/Reference-sail_c_simulator.signature
 Match  Line#    File1    File2
-*          2 00000000 0000cafe
-*          3 00000000 0000cafe
-*          4 00000000 0000cafe
-*          5 00000000 0000babe
-*          6 00000000 0000cafe
-*          7 00000000 0000babe
-*          8 00000000 0000babe
-*          9 00000000 0000babe
-*         10 00000000 0000cafe
-*         11 00000000 0000cafe
-*         12 00000000 0000cafe
-*         13 00000000 0000cafe
-*         14 00000000 0000cafe
-*         15 00000000 0000cafe
-*         16 00000000 0000cafe
-*         17 00000000 0000cafe
-*         18 00000000 0000cafe
-*         19 00000000 0000cafe
-*         20 00000000 0000cafe
-*         21 00000000 0000cafe
-*         22 00000000 0000cafe
-*         23 00000000 0000cafe
-*         24 00000000 0000cafe
-*         25 00000000 0000cafe
-*         26 00000000 0000cafe
-*         27 00000000 0000cafe
-*         28 00000000 0000cafe
-*         29 00000000 0000cafe
-*         30 00000000 0000cafe
-*         31 00000000 0000cafe
-*         32 00000000 0000cafe
+*          2 babecafe 0000cafe
+*          3 babecafe 0000cafe
+*          4 babecafe 0000cafe
+*          5 babecafe 0000babe
+*          6 babecafe 0000cafe
+*          7 babecafe 0000babe
+*          8 babecafe 0000babe
+*          9 babecafe 0000babe
+*         10 babecafe 0000cafe
+*         11 babecafe 0000cafe
+*         12 babecafe 0000cafe
+*         13 babecafe 0000cafe
+*         14 babecafe 0000cafe
+*         15 babecafe 0000cafe
+*         16 babecafe 0000cafe
+*         17 babecafe 0000cafe
+*         18 babecafe 0000cafe
+*         19 babecafe 0000cafe
+*         20 babecafe 0000cafe
+*         21 babecafe 0000cafe
+*         22 babecafe 0000cafe
+*         23 babecafe 0000cafe
+*         24 babecafe 0000cafe
+*         25 babecafe 0000cafe
+*         26 babecafe 0000cafe
+*         27 babecafe 0000cafe
+*         28 babecafe 0000cafe
+*         29 babecafe 0000cafe
+*         30 babecafe 0000cafe
+*         31 babecafe 0000cafe
+*         32 babecafe 0000cafe
           33 6f5ca309 6f5ca309
 </br></div></td>
         </tr></tbody>
@@ -4778,54 +4784,17 @@ TEST_CASE_1=True
 XLEN=32</br></div></td>
         </tr></tbody>
         
-        <tbody class= "failed  results-table-row" >
+        <tbody class= "passed  results-table-row" >
         <tr>
           <td class="col-name">/home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/lw-align-01.S</td>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td class="col-path">/home/moon/moon_verif/riscof_work/src/lw-align-01.S</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">commit_id:-
 MACROS:
 TEST_CASE_1=True
-XLEN=32
-File1 Path:/home/moon/moon_verif/riscof_work/src/lw-align-01.S/dut/DUT-moon.signature
-File2 Path:/home/moon/moon_verif/riscof_work/src/lw-align-01.S/ref/Reference-sail_c_simulator.signature
-Match  Line#    File1    File2
-*          1 deadbeef babecafe
-*          2 deadbeef babecafe
-*          3 deadbeef babecafe
-*          4 deadbeef babecafe
-*          5 deadbeef babecafe
-*          6 deadbeef babecafe
-*          7 deadbeef babecafe
-*          8 deadbeef babecafe
-*          9 deadbeef babecafe
-*         10 deadbeef babecafe
-*         11 deadbeef babecafe
-*         12 deadbeef babecafe
-          13 00000000 00000000
-*         14 deadbeef babecafe
-*         15 deadbeef babecafe
-*         16 deadbeef babecafe
-*         17 deadbeef babecafe
-*         18 deadbeef babecafe
-*         19 deadbeef babecafe
-*         20 deadbeef babecafe
-*         21 deadbeef babecafe
-*         22 deadbeef babecafe
-*         23 deadbeef babecafe
-*         24 deadbeef babecafe
-*         25 deadbeef babecafe
-*         26 deadbeef babecafe
-*         27 deadbeef babecafe
-*         28 deadbeef babecafe
-*         29 deadbeef babecafe
-*         30 deadbeef babecafe
-*         31 deadbeef babecafe
-*         32 deadbeef babecafe
-          33 6f5ca309 6f5ca309
-</br></div></td>
+XLEN=32</br></div></td>
         </tr></tbody>
         
         <tbody class= "failed  results-table-row" >
@@ -4873,58 +4842,30 @@ TEST_CASE_1=True
 XLEN=32</br></div></td>
         </tr></tbody>
         
-        <tbody class= "failed  results-table-row" >
+        <tbody class= "passed  results-table-row" >
         <tr>
           <td class="col-name">/home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sb-align-01.S</td>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td class="col-path">/home/moon/moon_verif/riscof_work/src/sb-align-01.S</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">commit_id:-
 MACROS:
 TEST_CASE_1=True
-XLEN=32
-File1 Path:/home/moon/moon_verif/riscof_work/src/sb-align-01.S/dut/DUT-moon.signature
-File2 Path:/home/moon/moon_verif/riscof_work/src/sb-align-01.S/ref/Reference-sail_c_simulator.signature
-Match  Line#    File1    File2
-*          6 deadbeef de00beef
-*          7 deadbeef deffbeef
-*          8 deadbeef de04beef
-*          9 deadbeef deaabeef
-*         10 deadbeef deadf9ef
-*         11 deadbeef dead00ef
-*         12 deadbeef deadffef
-*         13 deadbeef deadffef
-*         14 deadbeef 00adbeef
-*         15 deadbeef ffadbeef
-*         16 deadbeef ffadbeef
-*         17 deadbeef 00adbeef
-          18 deadbeff deadbeff
-*         70 deadbeef deaddfef
-          71 6f5ca309 6f5ca309
-</br></div></td>
+XLEN=32</br></div></td>
         </tr></tbody>
         
-        <tbody class= "failed  results-table-row" >
+        <tbody class= "passed  results-table-row" >
         <tr>
           <td class="col-name">/home/moon/moon_verif/riscv-arch-test/riscv-test-suite/rv32i_m/I/src/sh-align-01.S</td>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td class="col-path">/home/moon/moon_verif/riscof_work/src/sh-align-01.S</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">commit_id:-
 MACROS:
 TEST_CASE_1=True
-XLEN=32
-File1 Path:/home/moon/moon_verif/riscof_work/src/sh-align-01.S/dut/DUT-moon.signature
-File2 Path:/home/moon/moon_verif/riscof_work/src/sh-align-01.S/ref/Reference-sail_c_simulator.signature
-Match  Line#    File1    File2
-*          7 deadbeef fff7beef
-*          8 deadbeef 0400beef
-*          9 deadbeef ffffbeef
-*         10 deadbeef 0200beef
-          11 dead0000 dead0000
-</br></div></td>
+XLEN=32</br></div></td>
         </tr></tbody>
         
         <tbody class= "passed  results-table-row" >

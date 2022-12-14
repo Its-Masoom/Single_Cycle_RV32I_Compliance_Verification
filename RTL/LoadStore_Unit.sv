@@ -102,15 +102,15 @@ always_comb begin
                             end
                         end 
                         2'b01: begin
-                            data_wr [15:8] = rdata2[15:8];
+                            data_wr [15:8] = rdata2[7:0];
                             mask           = 4'b0010;
                         end
                         2'b10: begin
-                            data_wr[23:16] = rdata2 [23:16];
+                            data_wr[23:16] = rdata2 [7:0];
                             mask           = 4'b0100;
                         end
                         2'b11:begin
-                            data_wr[31:24] = rdata2[31:24];
+                            data_wr[31:24] = rdata2[7:0];
                             mask           = 4'b1000;
                         end
                         default: begin
@@ -122,7 +122,7 @@ always_comb begin
                             1'b0 : begin data_wr [15:0]  = rdata2[15:0];
                             mask                         = 4'b0011;
                             end
-                            1'b1 : begin data_wr [31:16] = rdata2 [31:16];
+                            1'b1 : begin data_wr [31:16] = rdata2 [15:0];
                             mask                         = 4'b1100;
                             end
                         endcase
