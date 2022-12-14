@@ -1,5 +1,5 @@
 # vsim -c -do "run -all" TopLevel_tb "+sig=/home/moon/moon_verif/riscof_work/src/xori-01.S/dut/DUT-moon.signature" "+mem_init=/home/moon/moon_verif/riscof_work/src/xori-01.S/dut/dut.hex" 
-# Start time: 15:49:53 on Dec 14,2022
+# Start time: 17:09:17 on Dec 14,2022
 # Loading sv_std.std
 # Loading work.TopLevel_tb
 # Loading work.TopLevel
@@ -25,5 +25,5 @@
 # STRING with FS has a value /home/moon/moon_verif/riscof_work/src/xori-01.S/dut/DUT-moon.signature
 # ** Note: $finish    : ./RTL/TopLevel_tb.sv(42)
 #    Time: 8885 ps  Iteration: 1  Instance: /TopLevel_tb
-# End time: 15:49:54 on Dec 14,2022, Elapsed time: 0:00:01
+# End time: 17:09:19 on Dec 14,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
