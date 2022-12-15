@@ -351,14 +351,10 @@ Disassembly of section .tohost:
 Disassembly of section .data:
 
 80002000 <rvtest_data_begin>:
-80002000:	cafe                	sw	t6,84(sp)
-80002002:	babe                	fsd	fa5,368(sp)
-80002004:	cafe                	sw	t6,84(sp)
-80002006:	babe                	fsd	fa5,368(sp)
-80002008:	cafe                	sw	t6,84(sp)
-8000200a:	babe                	fsd	fa5,368(sp)
-8000200c:	cafe                	sw	t6,84(sp)
-8000200e:	babe                	fsd	fa5,368(sp)
+80002000:	deadbeef          	jal	t4,7ffdd5ea <offset+0x7ffdd5ba>
+80002004:	deadbeef          	jal	t4,7ffdd5ee <offset+0x7ffdd5be>
+80002008:	deadbeef          	jal	t4,7ffdd5f2 <offset+0x7ffdd5c2>
+8000200c:	deadbeef          	jal	t4,7ffdd5f6 <offset+0x7ffdd5c6>
 
 80002010 <rvtest_data_end>:
 	...

@@ -1,5 +1,5 @@
 # vsim -c -do "run -all" TopLevel_tb "+sig=/home/moon/moon_verif/riscof_work/src/xori-01.S/dut/DUT-moon.signature" "+mem_init=/home/moon/moon_verif/riscof_work/src/xori-01.S/dut/dut.hex" 
-# Start time: 18:59:15 on Dec 14,2022
+# Start time: 13:49:45 on Dec 15,2022
 # Loading sv_std.std
 # Loading work.TopLevel_tb
 # Loading work.TopLevel
@@ -19,11 +19,11 @@
 # Loading work.MuxResult
 # Loading work.BranchCond
 # Loading work.Memory_mux
-# ** Warning: (vsim-3015) [PCDPC] - Port size (21) does not match connection size (32) for port 'addr'. The port definition is at: ./RTL/Data_Memory.sv(6).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (32) for port 'addr'. The port definition is at: ./RTL/Data_Memory.sv(6).
 #    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/TOPLevel/Dmem File: ./RTL/TopLevel.sv Line: 21
 # run -all
 # STRING with FS has a value /home/moon/moon_verif/riscof_work/src/xori-01.S/dut/DUT-moon.signature
 # ** Note: $finish    : ./RTL/TopLevel_tb.sv(42)
 #    Time: 8885 ps  Iteration: 1  Instance: /TopLevel_tb
-# End time: 18:59:17 on Dec 14,2022, Elapsed time: 0:00:02
+# End time: 13:49:46 on Dec 15,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
