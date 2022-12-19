@@ -36,10 +36,10 @@ inst_0:
 // opcode: jalr; op1:x4; dest:x25; immval:0x40; align:0 
 TEST_JALR_OP(x15, x25, x4, 0x40, x10, 0,0)
 
-inst_1:
+//inst_1:
 // rs1 == rd, rs1==x17, rd==x17, imm_val < 0, imm_val == -257
 // opcode: jalr; op1:x17; dest:x17; immval:-0x101; align:0 
-TEST_JALR_OP(x15, x17, x17, -0x101, x10, 4,0)
+//TEST_JALR_OP(x15, x17, x17, -0x101, x10, 4,0)
 
 inst_2:
 // rs1==x3, rd==x16, imm_val == 1, 
